@@ -84,6 +84,8 @@ To use the Custom Video Player API, you need to provide a JSON object containing
 You can access the live demo of the Custom Video Player API at the following link:
 [Live Demo](https://codewithnitiksh.github.io/Custom-Video-Player-API/)
 
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7243199163310477313" height="509" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+
 ## Usage
 
 This API is suitable for developers looking to integrate video playback functionality into their applications. You can easily customize the player’s behavior and appearance to fit your project requirements.
