@@ -13,7 +13,7 @@ Welcome to the Custom Video Player API! This project provides a customizable vid
 
 To use the Custom Video Player API, you need to provide a JSON object containing the video details, including title, poster, and video URLs. Below is an example of how to implement the player:
 
-### Implementation Example
+### Implementation Examples
 
 ```html
 <div id="video-container">
