@@ -5,7 +5,6 @@ Welcome to the Custom Video Player API! This project provides a customizable vid
 ## Features
 
 - **Multiple Video Quality Support**: Easily switch between different video qualities.
-- **Customizable UI**: Modify the player appearance and behavior according to your needs.
 - **Fullscreen Support**: Enjoy videos in fullscreen mode.
 - **Dynamic Data Handling**: Load video data dynamically through a URL-encoded JSON format.
 
