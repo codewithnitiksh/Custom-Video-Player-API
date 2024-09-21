@@ -41,6 +41,43 @@ To use the Custom Video Player API, you need to provide a JSON object containing
     </script>
 </div>
 ```
+```html
+<div id="video-container"></div>
+<script>
+    // Function to create the iframe and embed the video player
+    function createVideoPlayer(videoData, containerId) {
+        const jsonString = encodeURIComponent(JSON.stringify(videoData));
+        const iframeSrc = "https://codewithnitiksh.github.io/Custom-Video-Player-API/?data=" + jsonString;
+
+        // Create the iframe dynamically
+        const iframe = document.createElement('iframe');
+        iframe.src = iframeSrc;
+        iframe.title = "Video Player";
+        iframe.allowFullscreen = true; // Allow fullscreen
+        iframe.allow = "fullscreen"; // Set the permissions policy
+        iframe.style.width = "100%";
+        iframe.style.height = "500px"; // Optional: Adjust the height
+
+        // Append the iframe to the container
+        const container = document.getElementById(containerId);
+        container.appendChild(iframe);
+    }
+
+    // Define the video data
+    const videoData = {
+        title: "Demo Video",
+        poster: "https://codewithnitiksh.github.io/sample-data/images/spider-man-no-way-home-u7sd6vs76v.webp",
+        urls: [
+            { "url": "https://codewithnitiksh.github.io/sample-data/videos/3195394-sd_640_360_25fps.mp4", "quality": "360p" },
+            { "url": "https://codewithnitiksh.github.io/sample-data/videos/Happiness(240p).mp4", "quality": "240p" },
+            { "url": "https://codewithnitiksh.github.io/sample-data/videos/Happiness(144p).mp4", "quality": "144p" }
+        ]
+    };
+
+    // Call the function to create and embed the video player in the container
+    createVideoPlayer(videoData, 'video-container');
+</script>
+```
 
 
 ## Accessing the API
