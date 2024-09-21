@@ -42,9 +42,6 @@ To use the Custom Video Player API, you need to provide a JSON object containing
 </div>
 ```
 
-### Example Video Data
-
-In the example above, replace the `poster` URL and the video URL with your desired content. This JSON object can be modified to include multiple video URLs with different qualities.
 
 ## Accessing the API
 
