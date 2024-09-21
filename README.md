@@ -22,7 +22,9 @@ To use the Custom Video Player API, you need to provide a JSON object containing
             title: "Demo Video",
             poster: "https://codewithnitiksh.github.io/sample-data/images/spider-man-no-way-home-u7sd6vs76v.webp", // Replace with your poster URL
             urls: [
-                { "url": "https://codewithnitiksh.github.io/sample-data/videos/3195394-sd_640_360_25fps.mp4", "quality": "360p" }
+                { "url": "https://codewithnitiksh.github.io/sample-data/videos/3195394-sd_640_360_25fps.mp4", "quality": "360p" },
+                { "url": "https://codewithnitiksh.github.io/sample-data/videos/Happiness(240p).mp4", "quality": "240p" },
+                { "url": "https://codewithnitiksh.github.io/sample-data/videos/Happiness(144p).mp4", "quality": "144p" }
             ]
         };
 
