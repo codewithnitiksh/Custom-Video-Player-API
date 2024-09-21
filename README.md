@@ -1,0 +1,58 @@
+# Custom Video Player API
+
+Welcome to the Custom Video Player API! This project provides a customizable video player that can be easily embedded into your web applications. It supports multiple video qualities and includes features like play, pause, volume control, and fullscreen mode.
+
+## Features
+
+- **Multiple Video Quality Support**: Easily switch between different video qualities.
+- **Customizable UI**: Modify the player appearance and behavior according to your needs.
+- **Fullscreen Support**: Enjoy videos in fullscreen mode.
+- **Dynamic Data Handling**: Load video data dynamically through a URL-encoded JSON format.
+
+## Getting Started
+
+To use the Custom Video Player API, you need to provide a JSON object containing the video details, including title, poster, and video URLs. Below is an example of how to implement the player:
+
+### Implementation Example
+
+```html
+<div id="video-container">
+    <script>
+        const videoData = {
+            title: "Demo Video",
+            poster: "https://codewithnitiksh.github.io/sample-data/images/spider-man-no-way-home-u7sd6vs76v.webp", // Replace with your poster URL
+            urls: [
+                { "url": "https://codewithnitiksh.github.io/sample-data/videos/3195394-sd_640_360_25fps.mp4", "quality": "360p" }
+            ]
+        };
+
+        const jsonString = encodeURIComponent(JSON.stringify(videoData));
+        const iframeSrc = "https://codewithnitiksh.github.io/Custom-Video-Player-API/?data=" + jsonString;
+
+        // Create the iframe dynamically
+        const iframe = document.createElement('iframe');
+        iframe.src = iframeSrc;
+        iframe.title = "Video Player";
+        iframe.allowFullscreen = true; // Allow fullscreen
+        iframe.allow = "fullscreen"; // Set the permissions policy
+        document.getElementById('video-container').appendChild(iframe);
+    </script>
+</div>
+```
+
+### Example Video Data
+
+In the example above, replace the `poster` URL and the video URL with your desired content. This JSON object can be modified to include multiple video URLs with different qualities.
+
+## Accessing the API
+
+You can access the live demo of the Custom Video Player API at the following link:
+[Live Demo](https://codewithnitiksh.github.io/Custom-Video-Player-API/)
+
+## Usage
+
+This API is suitable for developers looking to integrate video playback functionality into their applications. You can easily customize the player’s behavior and appearance to fit your project requirements.
+
+## License
+
+This project is open-source and available for public use. Feel free to contribute, modify, and use it in your projects!
